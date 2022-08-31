@@ -6,3 +6,12 @@ body {
   margin: 0;
   background: #333;
 }
+
+.card {
+  background: lightgrey;
+  padding: 30px;
+  border-radius: 35px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1px;
+}
