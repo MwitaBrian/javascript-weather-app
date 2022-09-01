@@ -7,7 +7,7 @@ body {
   background: #333;
   font-family: 'Robot', sans-serif;
   background-image: url("https://source.unsplash.com/random?weather/?sig=${Math.random()}");
-  
+  font-size: 100%;
 }
 
 .card {
@@ -32,9 +32,30 @@ input.search-bar {
   outline: none;
   padding: 7px 16px;
   border-radius: 18px;
-  background-color: #7C7C7C2B;
+  background-color: #62626298;
   color: white;
   font-family: inherit;
   font-size: 100%;
   width: 60%;
+}
+
+button {
+  margin: 8px;
+  border-radius: 10px;
+  border: none;
+  height: 32px;
+  width: 105px;
+  outline: none;
+  background: #7C7C7C2B;
+  color: white;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+button:hover {
+  background-color: #7C7C7C6B;
+}
+
+h1.temp {
+  margin: 1px;
 }
