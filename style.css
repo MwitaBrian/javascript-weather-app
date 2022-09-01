@@ -19,3 +19,22 @@ body {
   max-width: 420px;
   margin: 1px;
 }
+
+.searchBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.search-bar {
+  width: 10;
+  border: none;
+  outline: none;
+  padding: 7px 16px;
+  border-radius: 18px;
+  background-color: #7C7C7C2B;
+  color: white;
+  font-family: inherit;
+  font-size: 100%;
+  width: 60%;
+}
