@@ -5,6 +5,9 @@ body {
   height: 100vh;
   margin: 0;
   background: #333;
+  font-family: 'Robot', sans-serif;
+  background-image: url("https://source.unsplash.com/random?weather/?sig=${Math.random()}");
+  
 }
 
 .card {
