@@ -23,5 +23,8 @@ let weather = {
     document.querySelector('.temp').innerText = `${temp}°C`;
     document.querySelector('.humidity').innerText = `Humidity: ${humidity}%`;
     document.querySelector('.wind').innerText = `Wind speed: ${speed}km/h`
+  },
+  checkWeather: function() {
+    this.checkWeather(document.querySelector('.search-bar').value);
   }
 }
