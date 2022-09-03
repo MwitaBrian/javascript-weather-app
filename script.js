@@ -34,4 +34,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 document.querySelector('.searchButton').addEventListener('click', function (){ 
   weather.checkWeather(); 
 })
+
+document.querySelector('.searchBox').addEventListener('keyup', function(enterKey) {
+  if (enterKey.key == "Enter") {
+    weather.checkWeather()
+  }
+})
 });
