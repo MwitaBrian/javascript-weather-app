@@ -18,13 +18,17 @@ let weather = {
     const { speed} = data.wind;
     console.log(name, icon, description, temp, humidity, speed);
     document.querySelector('.city').innerText = `Weather in ${name}`;
-    document.querySelector('.weatherIcon').src = `https://openweathermap.org/img/wn/${icon}.png`;
+    document.querySelector('.weatherIcon').src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     document.querySelector('.description').innerText = description;
     document.querySelector('.temp').innerText = `${temp}°C`;
     document.querySelector('.humidity').innerText = `Humidity: ${humidity}%`;
     document.querySelector('.wind').innerText = `Wind speed: ${speed}km/h`
   },
   checkWeather: function() {
-    this.checkWeather(document.querySelector('.search-bar').value);
+    this.getWeather(document.querySelector('.search-bar').value);
   }
 }
+
+document.querySelector('.searchButton').addEventListener('click', function (){ 
+  weather.checkWeather(); 
+})
