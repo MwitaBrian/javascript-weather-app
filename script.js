@@ -42,5 +42,5 @@ document.querySelector('.searchBox').addEventListener('keyup', function(enterKey
   }
 });
 
-
+weather.getWeather("Nairobi");
 });
