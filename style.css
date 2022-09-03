@@ -5,7 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   background: #333;
-  background-image: url("https://source.unsplash.com/random?weather/?sig=${Math.random()}");
+  background-image: url("https://source.unsplash.com/random?earth");
   font-family: 'Robot', sans-serif;
   font-size: 100%;
 }
@@ -79,7 +79,7 @@ h1.temp {
 
 .weather.loadWindow::after {
   visibility: visible;
-  content: "Loading...";
+  content: "Find out the weather in any City";
   position: absolute;
   top: 0;
   left: 10px;

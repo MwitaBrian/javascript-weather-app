@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.humidity').innerText = `Humidity: ${humidity}%`;
     document.querySelector('.wind').innerText = `Wind speed: ${speed}km/h`;
     document.querySelector('.weather').classList.remove("loadWindow");
+    document.body.style.backgroundImage = `url('https://source.unsplash.com/random?${name}')`
   },
   checkWeather: function() {
     this.getWeather(document.querySelector('.search-bar').value);
@@ -41,6 +42,4 @@ document.querySelector('.searchBox').addEventListener('keyup', function(enterKey
     weather.checkWeather()
   }
 });
-
-weather.getWeather("Nairobi");
 });
