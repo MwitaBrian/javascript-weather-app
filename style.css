@@ -5,8 +5,8 @@ body {
   height: 100vh;
   margin: 0;
   background: #333;
-  font-family: 'Robot', sans-serif;
   background-image: url("https://source.unsplash.com/random?weather/?sig=${Math.random()}");
+  font-family: 'Robot', sans-serif;
   font-size: 100%;
 }
 
@@ -63,10 +63,24 @@ h1.temp {
 
 .description {
   text-transform: capitalize;
-  margin-left: 7px;
+  margin-left: 2px;
 }
 
 .flex {
   display: flex;
   align-items: center;
+}
+
+.weather.loadWindow {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loadWindow::after {
+  visibility: visible;
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 10px;
 }

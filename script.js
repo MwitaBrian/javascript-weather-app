@@ -24,20 +24,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.description').innerText = description;
     document.querySelector('.temp').innerText = `${temp}°C`;
     document.querySelector('.humidity').innerText = `Humidity: ${humidity}%`;
-    document.querySelector('.wind').innerText = `Wind speed: ${speed}km/h`
+    document.querySelector('.wind').innerText = `Wind speed: ${speed}km/h`;
+    document.querySelector('.weather').classList.remove("loadWindow");
   },
   checkWeather: function() {
     this.getWeather(document.querySelector('.search-bar').value);
   }
-}
+};
 
 document.querySelector('.searchButton').addEventListener('click', function (){ 
   weather.checkWeather(); 
-})
+});
 
 document.querySelector('.searchBox').addEventListener('keyup', function(enterKey) {
   if (enterKey.key == "Enter") {
     weather.checkWeather()
   }
-})
+});
+
+
 });
