@@ -1,4 +1,6 @@
-let weather = {
+document.addEventListener('DOMContentLoaded', (event) => {
+  console.log('DOM fully loaded and parsed');
+  let weather = {
   apiKey: '285dc7d12b49e28ef136e0bbb52e464c',
   getWeather: function getWeather (cityName) {
     fetch(
@@ -32,3 +34,4 @@ let weather = {
 document.querySelector('.searchButton').addEventListener('click', function (){ 
   weather.checkWeather(); 
 })
+});
